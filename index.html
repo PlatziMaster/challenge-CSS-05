@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Flexbox</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #c0c0c052;
+        }
+        .principal{
+            display: flex;
+            border: 1px solid #b7b7b7;
+            box-shadow: 2px 2px 2px  #818181;
+            width: 550px;
+            height: 280px;
+            margin-top: 200px;
+            margin-left: 400px;
+            background: white;
+        }
+        .prin_1{
+            display: flex;
+            height: 200px;
+            width: 250px;
+        }
+        .description{
+            margin-left: 50px;
+            margin-top: 20px;
+            width: 200px;
+            font-size: 25px;
+        }
+        .tile{
+            font-size: 25px;
+        }
+        .article{
+            font-size: 15px;
+            width: 300px;
+            color: gray;
+            font-weight:500;
+        }
+        .article p{
+            margin-top: -10px;
+        }
+        .section_footer{
+            border-top: 1px solid #b7b7b7;
+            display: flex;
+            margin-top: 200px;
+            margin-left: -251px;
+            padding-right: -50px;
+            align-items: center;
+        }
+        .footer_left{
+            width: 300px;
+            padding-left: 20px;
+            color: gray;
+            font-weight: 500;
+        }
+        .footer_right{
+            display: flex;
+            width: -100px;
+            padding-left: 5px;
+        }
+        .img_1, .img_2, .img_3, .img_4, .img_5{
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">
+        <div class="prin_1">
+
+            <img src="https://direct.rhapsody.com/imageserver/images/alb.236486660/500x500.jpg" width="250px" height="200px">
+            <div class="description">
+                <p >Rozes</p>
+                <article class="article">
+                    <p>Under the Grave</p>
+                    <p>(2016)</p>
+                </article>
+            </div>
+        </div>
+        <section class="section_footer">
+            <div class="footer_left">
+                <p>Rate this album</p>
+            </div>
+            <div class="footer_right">
+                <div class="img_1">
+                    <img src="https://image.flaticon.com/icons/svg/929/929566.svg" width="30px" height="30px">
+                </div>
+
+                <div class="img_2" > 
+                    <img src="https://image.flaticon.com/icons/svg/929/929566.svg" width="30px" height="30px">
+                </div>
+                <div class="img_3">
+                    <img src="https://image.flaticon.com/icons/svg/929/929566.svg" width="30px" height="30px">
+                </div>
+                <div class="img_4">
+                    <img src="https://image.flaticon.com/icons/svg/929/929566.svg" width="30px" height="30px">
+                </div>
+                <div class="img_5">
+                    <img src="https://image.flaticon.com/icons/svg/929/929566.svg" width="30px" height="30px">
+                </div>
+            </div>
+        </section>
+       
+        
+    </div>
+    
+    
+</body>
+</html>
