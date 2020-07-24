@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+    color: #8C8C8C;
+    font-size: 19px;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+.back {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+.information {
+    display: flex;
+    margin: auto;
+}
+
+.information__img {
+    height: 200px;
+}
+
+.information__img img {
+    height: 200px;
+    width: 200px;
+    border-top-left-radius: 6px;
+}
+
+.information__song {
+    padding: 40px 30px;
+    height: 200px;
+}
+
+.information__song h1 {
+    font-size: 40px;
+    font-weight: normal;
+    color: #414246;
+}
+
+.information__song p {
+    padding-top: 30px;
+}
+
+.rank {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 1px;
+}
+
+.rank i {
+    padding-left: 5px;
+    font-size: 25px;
+}
