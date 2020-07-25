@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 5</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px; /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+
+      /* Support for IE. */
+      font-feature-settings: 'liga';
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    .container {
+      margin: 0 auto;
+      min-height: 600px;
+      width: 600px;
+      background-color: white;
+      border: 1px solid #d3d3d3;
+      margin-top: 10px;
+    }
+    .card {
+      width: 400px;
+      border: 1px solid #f1f1f1;
+      border-radius: 4px;
+      margin: 0px auto;
+      margin-top: 30px;
+      box-shadow: 0px 6px 16px -4px #3339;
+    }
+    .card_section__header {
+      border-bottom: 1px solid #d3d3d3;
+      display: flex;
+      align-items: center;
+    }
+    .card_section__header_image {
+      width: 134px;
+      display: inherit;
+    }
+    .card_image {
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 4px;
+    }
+    .card_section__header_info {
+      padding-left: 20px;
+    }
+
+    .card_section__header_title {
+      font-size: 28px;
+      margin: 0px;
+      margin-bottom: 15px;
+    }
+    .card_section__header_subtitle {
+      margin: 0px;
+      color: #626262;
+    }
+    .card_section__footer {
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card_section__footer_text {
+      color: #626262;
+      margin: 0;
+    }
+    .card_section__footer_rate i {
+      color: #d0d0d0;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card_section__header">
+          <div class="card_section__header_image">
+            <img
+              class="card_image"
+              src="https://static.vecteezy.com/system/resources/previews/000/265/813/non_2x/vector-synthwave-retro-design-mountains-and-sun-illustration.jpg"
+            />
+          </div>
+          <div class="card_section__header_info">
+            <p class="card_section__header_title">Rozes</p>
+            <p class="card_section__header_subtitle">Under the grave</p>
+            <p class="card_section__header_subtitle">(2020)</p>
+          </div>
+        </div>
+        <div class="card_section__footer">
+          <div class="card_section__footer_text">
+            <p class="text">Rate this album</p>
+          </div>
+          <div class="card_section__footer_rate">
+            <div>
+              <i class="material-icons">star_outline</i>
+              <i class="material-icons">star_outline</i>
+              <i class="material-icons">star_outline</i>
+              <i class="material-icons">star_outline</i>
+              <i class="material-icons">star_outline</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
