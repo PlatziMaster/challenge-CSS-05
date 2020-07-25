@@ -1,0 +1,64 @@
+
+// Colors
+
+$gray: #e2e2e2;
+$dark-gray: #6a6a6a;
+$light-gray:#c5c5c5;
+
+.card{
+  width: 483px;
+  max-height: 245px;
+  border-radius: 6px;
+  border:1px solid $gray;
+  -webkit-box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.66);
+  -moz-box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.66);
+  box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.66);
+  font-family: 'Recursive', sans-serif;
+
+  &__album-info{
+    display: flex;
+    border-bottom: 1px solid $gray;
+  }
+  &__album-info img{
+    width: 165px;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  &__album-description{
+    margin-left: 30px;
+  }
+  &__album-title{
+    color:black;
+  }
+  &__album-name{
+    color:$dark-gray;
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+  &__album-year{
+    color:$dark-gray;
+    font-size: 1.2em;
+  }
+
+  &__album-rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-size: 1.2em;
+    color: $dark-gray;
+  }
+  &__album-rate ul{
+    list-style: none;
+    display: flex;
+    & li i {
+      margin-left:15px;
+      font-size: 1.6em;
+      color:$light-gray;
+    }
+  }
+}
