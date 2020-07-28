@@ -1,0 +1,34 @@
+.card{
+    border: 2px solid grey;
+    font-family: 'Raleway', sans-serif;
+    height: 335px;
+    margin: auto;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid grey;
+}
+
+.card__img img{
+    width: 109%;
+    height: 100%;
+}
+.card__title{
+    order: 1;
+    text-align: center;
+    width: 50%;
+    font-size: 100%;
+    border-left: 2px solid grey;
+}
+.card__title p{
+    margin: 8px 5px;
+    font-weight: bold;
+}
+.card__social{
+    order: 0;
+    width: 40%;
+    text-align: center;
+}
+.card__social img{
+    width: 60px;
+}
