@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: lightgrey;
+    overflow: hidden;
+}
+.card {
+    width: 600px;
+    height: 300px;
+    border: outset;
+    border-radius: 6px;
+    background-color: white;
+    position: absolute;
+    top: 28%;
+    
+    
+}
+.main {
+    display: flex;
+}
+.card img {
+    width: 200px;
+    height: 200px;
+}
+.title {
+    width: 400px;
+    height: 200px;
+    margin: 0px;
+    border-bottom: 1px solid lightgrey;
+}
+.title h1 {
+    margin-left: 60px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(43, 41, 41);
+    font-weight: 100;
+}
+.title h2 {
+    margin-left: 60px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(119, 113, 113);
+    font-weight: 100;
+}
+.rate {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        
+}
+.rateAlbum {
+    display: flex;
+    margin: 0px 32px;
+    padding-top: 35px;
+    align-items: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: rgb(119, 113, 113);
+
+}
+
+form {
+    width: 250px;
+    margin: 0;
+    height: 50px;
+  }
+  
+  form p {
+    text-align: center;
+  }
+  
+  form label {
+    font-size: 37px;
+    letter-spacing: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: rgb(83, 80, 80);
+  }
+  
+  .clasification {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
