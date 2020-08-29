@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --body_color: #e5e5e5;
+  --text_color: #515151;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  border: 1px solid red;
+  background-color: var(--body_color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  font-family: 'Roboto', sans-serif;
+}
+
+.shelf {
+  width: 360px;
+  height: auto;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__img {
+  min-width: 100px;
+  max-width: 300px;
+  width: 30%
+}
+
+.card__img img {
+  width: 100%;
+  height: auto;
+}
+
+.card__texts {
+  width: 70%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--body_color);
+}
+
+.card__texts > * {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.card__text {
+  font-size: .8em;
+  color: var(--text_color);
+}
+
+.card__rate {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card__rating input {
+  display: none;
+}
+
+.card__rating label {
+  display: block;
+  cursor: pointer;
+  width: 24px;
+  margin-left: 8px;
+}
+
+.card__rating label::before {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: relative;
+  display: block;
+  font-size: 24px;
+  color: var(--body_color);
+}
+
+.card__rating label::after {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 24px;
+  color: goldenrod;
+  opacity: 0;
+  top: 7px;
+  transition: .5;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.card__rating label:hover::after,
+.card__rating label:hover ~ label::after,
+.card__rating input:checked ~ label::after {
+  opacity: 1;
+} 
