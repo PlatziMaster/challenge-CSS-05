@@ -77,4 +77,12 @@ body {
 .card__rate {
   border: 1px solid blueviolet;
   width: 100%;
+  padding: 8px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.card__rating {
+  border: 1px solid saddlebrown;
 }
