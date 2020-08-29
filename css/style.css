@@ -5,10 +5,13 @@
   --text_color: #515151;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   border: 1px solid red;
   background-color: var(--body_color);
-  box-sizing: border-box;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -20,4 +23,58 @@ body {
 .shelf {
   width: 360px;
   height: auto;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__img {
+  border: 1px solid red;
+  min-width: 100px;
+  max-width: 300px;
+  width: 30%
+}
+
+.card__img img {
+  width: 100%;
+  height: auto;
+}
+
+.card__texts {
+  border: 1px solid goldenrod;
+  width: 70%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card__texts > * {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.card__title {
+  border: 1px solid olive;
+  
+}
+
+.card__text {
+  border: 1px solid orangered;
+
+  font-size: .8em;
+  color: var(--text_color);
+}
+
+.card__rate {
+  border: 1px solid blueviolet;
+  width: 100%;
 }
