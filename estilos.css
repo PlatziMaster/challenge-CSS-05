@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-album {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 170px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px #ccc;
+}
+
+.album {
+    display: flex;
+    width: inherit;
+    height: 65%;
+    box-shadow: 0 1px #ccc;
+
+}
+
+.album-cover {
+    width: 35%;
+    height: 100%;
+    background-image: url(https://direct.rhapsody.com/imageserver/images/alb.236486660/500x500.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0;
+}
+
+.album-info {
+    width: 67%;
+    margin: 0;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.album-info-title {
+    margin: 0;
+}
+
+.title1 {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.title2 {
+    font-weight: 300;
+    font-size: 13px;
+    color: #656565;
+}
+
+.rating {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 10px 15px;
+}
+
+.rating p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+    color: #656565;
+}
+
+/* De aquí en adelante aún no lo domino por completo */
+
+.rating-score:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rating-score:not(:checked) > label {
+    float:right;
+    width:1em;
+    margin: 5px;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size: 20px;
+    color:#ccc;
+}
+.rating-score:not(:checked) > label:before {
+    content: '★ ';
+}
+.rating-score > input:checked ~ label {
+    color: #ffc700;    
+}
+.rating-score:not(:checked) > label:hover,
+.rating-score:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rating-score > input:checked + label:hover,
+.rating-score > input:checked + label:hover ~ label,
+.rating-score > input:checked ~ label:hover,
+.rating-score > input:checked ~ label:hover ~ label,
+.rating-score > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
