@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --gris: #E5E5E5;
+    --blanco: #ffffff;
+    --grisoscuro: #696969;
+    --naranja: orange;
+}
+html{
+    font-size: 62.5%;
+    width: 100vw;
+}
+body{
+    font-size: 1.3rem;
+    font-family: 'Monserrat', sans-serif;
+    background-color: var(--gris);
+}
+.card{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    margin: 5rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 35rem;
+    height: 17rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--blanco);
+}
+.album{
+    display: flex;
+    width: inherit;
+    height: 65%;
+    border-bottom: solid .1rem var(--gris);
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1); */
+}
+.album-cover{
+    width: 35%;
+    height: 100%;
+    background-image: url(https://m.media-amazon.com/images/I/81YB9xgNvQL._SS500_.jpg);
+    background-repeat: none;
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+}
+.album-info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    justify-content: space-around;
+}
+.album-title{
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+.album-subtitle{
+    font-weight: 400;
+    color: var(--grisoscuro);
+}
+.album-rating{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 1rem 1.5rem;
+}
+.rating-stars{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+.star{
+    color: var(--grisoscuro);
+    font-size: 2rem;
+    opacity: .5;
+}
+.rating-stars > span:hover:before,
+.rating-stars > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    color: var(--naranja);
+}
+p{
+    color: var(--grisoscuro);
+    font-weight: 500;
+}
